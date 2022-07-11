@@ -16,8 +16,10 @@ public class Loader : MonoBehaviour {
     static void LoadHaxGameObjects() {
         DontDestroyOnLoad(Loader.HaxGameObject);
 
+        AddHaxGameObject<Cheat>();
         AddHaxGameObject<InputListener>();
         AddHaxGameObject<Console>();
+        AddHaxGameObject<CursorController>();
         AddHaxGameObject<Hax>();
         AddHaxGameObject<HaxObjects>();
     }

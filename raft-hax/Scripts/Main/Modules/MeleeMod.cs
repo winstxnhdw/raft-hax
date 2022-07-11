@@ -2,21 +2,19 @@ namespace RAFT_HAX;
 public class MeleeMod : HaxModules {
     protected override void OnEnable() {
         base.OnEnable();
-        HaxObjects.MeleeWeaponObject.Init(this);
+        HaxObjects.MeleeWeaponObjects.Init(this);
     }
 
     protected override void OnDisable() {
         base.OnDisable();
-        HaxObjects.MeleeWeaponObject.Stop();
+        HaxObjects.MeleeWeaponObjects.Stop();
     }
 
     void Update() {
-        MeleeWeapon meleeWeapon = HaxObjects.MeleeWeaponObject.Object;
-
-        if (meleeWeapon == null) return;
-
-        Reflector.Target(meleeWeapon)
-                 .SetInternalField("damage", int.MaxValue)
-                 .SetInternalField("attackRange", 100.0f);
+        foreach (MeleeWeapon meleeWeapon in HaxObjects.MeleeWeaponObjects.Objects) {
+            Reflector.Target(meleeWeapon)
+                     .SetInternalField("damage", int.MaxValue)
+                     .SetInternalField("attackRange", 100.0f);
+        }
     }
 }
