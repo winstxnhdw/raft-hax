@@ -2,13 +2,13 @@ using Steamworks;
 
 namespace RAFT_HAX;
 public class UseCheats : HaxModules {
-    CSteamID SteamID { get; set; }
+    CSteamID PlayerSteamID { get; set; }
 
     protected override void OnEnable() {
         base.Start();
         InputListener.onF9Press += this.ToggleNuke;
-        this.SteamID = ComponentManager<Network_Player>.Value.steamID;
-        RemoteConfigManager.validDevIds.Add(this.SteamID);
+        this.PlayerSteamID = ComponentManager<Network_Player>.Value.steamID;
+        RemoteConfigManager.validDevIds.Add(this.PlayerSteamID);
         Cheat.Initialize();
     }
 
@@ -18,6 +18,6 @@ public class UseCheats : HaxModules {
     }
 
     void ToggleNuke() {
-        Cheat.HandleCheatCode("nuke", ",", this.SteamID);
+        Cheat.HandleCheatCode("nuke", ",", this.PlayerSteamID);
     }
 }
