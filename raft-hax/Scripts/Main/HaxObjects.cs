@@ -1,11 +1,20 @@
 namespace RAFT_HAX;
 public class HaxObjects : HaxComponents {
-    public static ObjectCache<Player> PlayerObject { get; } = new ObjectCache<Player>();
+    static ObjectsCache<Network_Player> playerObjects = new ObjectsCache<Network_Player>(0.3f);
+    public static Network_Player LocalPlayerObject {
+        get {
+            foreach (Network_Player player in playerObjects.Objects) {
+                if (player == null) continue;
+                if (!player.IsLocalPlayer) continue;
+                return player;
+            }
 
-    public static ObjectsCache<MeleeWeapon> MeleeWeaponObjects { get; } = new ObjectsCache<MeleeWeapon>(0.5f);
+            return null;
+        }
+    }
 
     protected override void Start() {
         base.Start();
-        HaxObjects.PlayerObject.Init(this);
+        HaxObjects.playerObjects.Init(this);
     }
 }

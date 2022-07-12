@@ -29,6 +29,8 @@ public class Loader : MonoBehaviour {
 
         AddHaxModules<UseCheats>();
         AddHaxModules<MeleeMod>();
+        AddHaxModules<PaddleMod>();
+        AddHaxModules<PersonMod>();
     }
 
     public static void Unload() {

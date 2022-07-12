@@ -7,7 +7,7 @@ public class Hax : HaxComponents {
     }
 
     void Update() {
-        if (Hax.HaxPaused || HaxObjects.PlayerObject.Object == null) {
+        if (Hax.HaxPaused || HaxObjects.LocalPlayerObject == null) {
             Global.SetActiveGameObject(Loader.HaxModules, false);
             return;
         }

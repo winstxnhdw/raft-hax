@@ -36,6 +36,10 @@
       <HintPath>./References/UnityEngine.InputLegacyModule.dll</HintPath>
     </Reference>
 
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>./References/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+
   </ItemGroup>
 
 </Project>

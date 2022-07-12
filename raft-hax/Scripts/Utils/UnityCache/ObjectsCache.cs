@@ -1,8 +1,6 @@
-using System;
 using UnityObject = UnityEngine.Object;
 
 namespace RAFT_HAX;
-
 public class ObjectsCache<T> : ObjectCacheBase where T : UnityObject {
     public T[] Objects { get; set; }
 
