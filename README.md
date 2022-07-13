@@ -1,6 +1,33 @@
 # raft-hax
 
-Internal cheats for Raft. No documentation because I am using this to activate the built-in developer cheats.
+Internal cheats for Raft.
+
+## Requirements
+
+- Windows 10 or higher
+- [Microsoft .NET SDK](https://dotnet.microsoft.com/en-us/download)
+
+## Installation
+
+If you are on Windows 11, follow the instructions [here](https://github.com/winstxnhdw/rc15-hax/wiki) instead. Otherwise, recursively clone this repository.
+
+```bash
+git clone --recursive https://github.com/winstxnhdw/raft-hax.git
+```
+
+You can now build and install the dependencies by executing `requirements.bat`. It is not required to build dnSpy if you do not plan on doing any [development](#Development).
+
+## Usage
+
+Execute `launch.bat` when you have lauched the game.
+
+## Development
+
+[dnSpy](https://github.com/dnSpy/dnSpy) is included as a submodule when you recursively clone this directory. If you plan to contribute to the development, dnSpy is an invaluable tool for browsing the Raft source code. You may compile dnSpy by executing `requirements.bat` and entering `Y` when the prompt to build dnSpy appears. You can then run the compiled dnSpy executable.
+
+```bash
+dnSpy/dnSpy.exe &
+```
 
 ## Developer Binds
 
@@ -14,7 +41,6 @@ All known/useful developer keyboard binds.
 | Restore Stats      | F3           |
 | Starter Kit        | Shift + F4   |
 | Paintbrush Kit     | Control + F4 |
-
 
 ## Developer Commands
 
@@ -60,3 +86,9 @@ All known developer commands.
 | Trophy Fish Kit | /kit trophyfish |
 | Blueprint Kit | /kit blueprint |
 | Equip Hazmat | /hazmat [true/false] |
+
+## Custom Binds
+
+| Action  | Shortcut |
+| ------- | -------- |
+| Paddle  | F10      |
