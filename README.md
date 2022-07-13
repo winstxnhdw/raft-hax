@@ -1,6 +1,6 @@
 # raft-hax
 
-Internal cheats for Raft.
+Internal cheats for [Raft](https://en.wikipedia.org/wiki/Raft_(video_game)).
 
 ## Requirements
 
