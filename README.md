@@ -49,6 +49,8 @@ All known developer commands.
 | Action  | Command |
 | ------- | -------- |
 | Give    | /give [item-id] |
+| Give OP Weapon | /give spear |
+| Give Titanium Sword | /give sword |
 | Reset Achievements | /reset achievements |
 | Reset Interactables | /reset interactables |
 | Reset Characters | /reset characters |
