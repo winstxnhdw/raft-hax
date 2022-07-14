@@ -94,3 +94,4 @@ All known developer commands.
 | Action  | Shortcut |
 | ------- | -------- |
 | Paddle  | F10      |
+| Console | `        |
