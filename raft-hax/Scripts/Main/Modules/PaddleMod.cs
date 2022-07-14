@@ -1,7 +1,11 @@
+using System.Collections;
 using UnityEngine;
+using Steamworks;
 
 namespace RAFT_HAX;
 public class PaddleMod : HaxModules {
+    Coroutine paddleCoroutine;
+
     protected override void OnEnable() {
         base.OnEnable();
         InputListener.onF10Press += this.Paddle;
@@ -13,6 +17,21 @@ public class PaddleMod : HaxModules {
         InputListener.onF10Press -= this.Paddle;
     }
 
-    void Paddle() => ComponentManager<Raft>.Value.AddForce(HaxObjects.LocalPlayerObject.transform.forward, 1000.0f, ForceMode.Impulse, true);
+    void Paddle() {
+        if (this.paddleCoroutine != null) {
+            StopCoroutine(this.paddleCoroutine);
+            return;
+        }
 
+        Network_Player networkPlayer = ComponentManager<Network_Player>.Value;
+        Message_Paddle messagePaddle = new Message_Paddle(Messages.Paddle, networkPlayer, Vector3.zero, networkPlayer.transform.forward, 100.0f);
+        this.paddleCoroutine = StartCoroutine(this.PaddleCoroutine(networkPlayer, messagePaddle));
+    }
+
+    IEnumerator PaddleCoroutine(Network_Player networkPlayer, Message_Paddle messagePaddle) {
+        while (true) {
+            networkPlayer.SendP2P(messagePaddle, EP2PSend.k_EP2PSendReliable, NetworkChannel.Channel_Game);
+            yield return null;
+        }
+    }
 }

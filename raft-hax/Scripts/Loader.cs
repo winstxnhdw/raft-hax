@@ -28,7 +28,6 @@ public class Loader : MonoBehaviour {
         DontDestroyOnLoad(Loader.HaxModules);
 
         AddHaxModules<UseCheats>();
-        AddHaxModules<MeleeMod>();
         AddHaxModules<PaddleMod>();
         AddHaxModules<PersonMod>();
     }
