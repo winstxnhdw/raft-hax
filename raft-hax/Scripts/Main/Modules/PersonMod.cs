@@ -5,5 +5,7 @@ public class PersonMod : HaxModules {
 
         PersonController personController = HaxObjects.LocalPlayerObject.GetComponentInChildren<PersonController>();
         personController.swimSpeed = 50.0f;
+        personController.normalSpeed = personController.sprintSpeed;
+        personController.sprintSpeed = 12.0f;
     }
 }
