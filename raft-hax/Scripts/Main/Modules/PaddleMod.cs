@@ -20,6 +20,7 @@ public class PaddleMod : HaxModules {
     void Paddle() {
         if (this.paddleCoroutine != null) {
             StopCoroutine(this.paddleCoroutine);
+            this.paddleCoroutine = null;
             return;
         }
 
@@ -30,7 +31,7 @@ public class PaddleMod : HaxModules {
 
     IEnumerator PaddleCoroutine(Network_Player networkPlayer, Message_Paddle messagePaddle) {
         while (true) {
-            networkPlayer.SendP2P(messagePaddle, EP2PSend.k_EP2PSendReliable, NetworkChannel.Channel_Game);
+            for (int i = 0; i < 10; i++) networkPlayer.SendP2P(messagePaddle, EP2PSend.k_EP2PSendReliable, NetworkChannel.Channel_Game);
             yield return null;
         }
     }
