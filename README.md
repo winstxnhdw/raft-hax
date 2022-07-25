@@ -94,7 +94,7 @@ The `/give` command is used to give yourself any item in the game.
 | ------- | ------- |
 | Give    | /give [UniqueName/UniqueIndex] [quantity]|
 
-The `UniqueName` of every item can be mined by performing the following.
+The `UniqueName` of every item can be mined by executing the following code. Since there are about 13 KB of items, we dump them into a `.txt` file within the Windows `Documents` folder.
 
 ```cs
 using System;
@@ -108,7 +108,7 @@ void DumpItemUniqueNames() {
 }
 ```
 
-This will produce the following result. Each line is an item's UniqueName in Raft. You can use the `/give` command to give yourself the item.
+This will produce the following result. Each line is an item's UniqueName in Raft. You can use the `/give` command to spawn the item into your inventory. See the following example.
 
 ```plaintext
 /give DevSpear 9999
