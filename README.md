@@ -109,10 +109,6 @@ File.WriteAllText(filePath, String.Join(Environment.NewLine, uniqueItemNames));
 
 This will produce the following result. Each line is an item's UniqueName in Raft. You can use the `/give` command to spawn the item into your inventory. See the following example.
 
-```plaintext
-/give DevSpear 9999
-```
-
 <details>
 
 <summary>UniqueName of every item</summary>
@@ -705,6 +701,10 @@ ThrowableAnchor
 ```
 
 </details>
+
+```plaintext
+/give DevSpear 9999
+```
 
 ## Custom Binds
 
