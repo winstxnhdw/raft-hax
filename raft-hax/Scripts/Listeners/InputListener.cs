@@ -10,7 +10,7 @@ public class InputListener : HaxComponents {
 
     Dictionary<Func<bool>, Action> keyActionsDict = new Dictionary<Func<bool>, Action>() {
         {() => Input.GetKeyDown(KeyCode.BackQuote),   () => Console.ShowConsole()},
-        {() => Input.GetKeyDown(KeyCode.F10),          () => InputListener.onF10Press()},
+        {() => Input.GetKeyDown(KeyCode.F10),         () => InputListener.onF10Press()},
         {() => Input.GetKeyDown(KeyCode.Pause),       () => InputListener.onPausePress?.Invoke()},
         {() => Input.GetKeyDown(KeyCode.Escape),      () => InputListener.onEscapePress?.Invoke()},
 
