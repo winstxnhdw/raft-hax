@@ -48,9 +48,15 @@ All known developer commands.
 
 | Action  | Command |
 | ------- | -------- |
-| Give    | /give [item-id] |
+| Give    | /give [item-id] [quantity]|
 | Give OP Weapon | /give spear |
 | Give Titanium Sword | /give sword |
+| Give Big Backpack | /give advance |
+| Give Flippers | /give flipper |
+| Give Electric Zipline Tool | /give electric |
+| Give Dev Hat | /give dev |
+| Give Diving Helmet | /give diving |
+| Give Paddle | /give paddle |
 | Reset Achievements | /reset achievements |
 | Reset Interactables | /reset interactables |
 | Reset Characters | /reset characters |
