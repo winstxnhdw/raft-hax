@@ -100,10 +100,11 @@ The `UniqueName` of every item can be mined by executing the following code. Sin
 using System;
 using System.IO;
 using System.Linq;
+using System.Collections;
 
-string uniqueItemNames = String.Join(Environment.NewLine, ItemManager.GetAllItems().Select(item => item.UniqueName));
+IEnumerable<string> uniqueItemNames = ItemManager.GetAllItems().Select(item => item.UniqueName);
 string myDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-File.WriteAllText($"{myDocumentsPath}/AllUniqueItemNames.txt", uniqueItemNames);
+File.WriteAllText($"{myDocumentsPath}/AllUniqueItemNames.txt", String.Join(Environment.NewLine, uniqueItemNames));
 ```
 
 This will produce the following result. Each line is an item's UniqueName in Raft. You can use the `/give` command to spawn the item into your inventory. See the following example.
