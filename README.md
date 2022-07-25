@@ -101,11 +101,9 @@ using System;
 using System.IO;
 using System.Linq;
 
-void DumpItemUniqueNames() {
-    string uniqueItemNames = String.Join(Environment.NewLine, ItemManager.GetAllItems().Select(item => item.UniqueName));
-    string myDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
-    File.WriteAllText($"{myDocumentsPath}/AllUniqueItemNames.txt", uniqueItemNames);
-}
+string uniqueItemNames = String.Join(Environment.NewLine, ItemManager.GetAllItems().Select(item => item.UniqueName));
+string myDocumentsPath = Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments);
+File.WriteAllText($"{myDocumentsPath}/AllUniqueItemNames.txt", uniqueItemNames);
 ```
 
 This will produce the following result. Each line is an item's UniqueName in Raft. You can use the `/give` command to spawn the item into your inventory. See the following example.
