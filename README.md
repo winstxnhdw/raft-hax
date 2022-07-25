@@ -244,7 +244,7 @@ Block_Wall_Wood
 Block_HalfWall_Wood
 Repair
 Backpack
-Backpack_Advanced
+Backpack_Advanced                           <-- Best backpack
 Equipment_LeatherChest
 Equipment_LeatherHelmet
 Equipment_LeatherLegs
@@ -252,7 +252,7 @@ Flipper
 Hat_Captain
 Hat_Chef
 Hat_Construction
-Hat_Dev
+Hat_Dev                                     <-- Best head light
 Hat_Diving
 Hat_Fishing
 Hat_Glasses_Aviator
@@ -266,7 +266,7 @@ HeadLight
 HeadLight_Advanced
 OxygenBottle
 ZiplineTool
-ZiplineTool_Electric
+ZiplineTool_Electric                        <-- Best zipline tool
 Banana
 Berries_Red
 Bucket_Milk
@@ -277,7 +277,7 @@ CaveMushroom
 Chili
 Claybowl_CoconutChicken
 Claybowl_Empty
-Claybowl_HeadBroth
+Claybowl_HeadBroth                          <-- Best sustenance item
 Claybowl_HeartyStew
 Claybowl_Leftover
 Claybowl_SimpleFishStew
@@ -406,7 +406,7 @@ FishingBait_Advanced
 FishingBait_Expert
 FishingBait_Simple
 HealingSalve
-HealingSalve_Good
+HealingSalve_Good                           <-- Best healing salve
 Mystery_Package
 TrophyFish_T1_Glow_Shrimp
 TrophyFish_T1_NetNibbler
@@ -669,21 +669,21 @@ Seed_Strawberry
 Seed_Watermelon
 Arrow_Metal
 Arrow_Stone
-Arrow_Titanium
+Arrow_Titanium                              <-- Best arrow
 Axe
 Axe_Stone
-Axe_Titanium
+Axe_Titanium                                <-- Best axe
 Binoculars
 Bow
 Bucket
 Compass
-DevSpear
+DevSpear                                    <-- Best weapon
 FishingRod
 FishingRod_Metal
 Hammer
 Hook_Plastic
 Hook_Scrap
-Hook_Titanium
+Hook_Titanium                               <-- Best hook
 Machete
 MetalDetector
 NetCanister
