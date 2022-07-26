@@ -252,7 +252,7 @@ Flipper
 Hat_Captain
 Hat_Chef
 Hat_Construction
-Hat_Dev                                     <-- Best head light
+Hat_Dev
 Hat_Diving
 Hat_Fishing
 Hat_Glasses_Aviator
@@ -263,7 +263,7 @@ Hat_Pirate
 Hat_Sailor
 Hat_Tiki
 HeadLight
-HeadLight_Advanced
+HeadLight_Advanced                          <-- Best headlight
 OxygenBottle
 ZiplineTool
 ZiplineTool_Electric                        <-- Best zipline tool
