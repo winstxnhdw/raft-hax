@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RAFT_HAX;
+namespace Hax;
 public class InputListener : HaxComponents {
     public static event Action onF10Press;
     public static event Action onPausePress;

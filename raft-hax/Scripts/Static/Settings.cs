@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RAFT_HAX;
+namespace Hax;
 public static class Settings {
     public static float SizeRatio => Screen.height / 1080.0f;
 }

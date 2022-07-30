@@ -1,6 +1,6 @@
 using Steamworks;
 
-namespace RAFT_HAX;
+namespace Hax;
 public class UseCheats : HaxModules {
     CSteamID PlayerSteamID { get; set; }
 

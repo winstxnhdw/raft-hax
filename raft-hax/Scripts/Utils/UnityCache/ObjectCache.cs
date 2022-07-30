@@ -1,6 +1,6 @@
 using UnityObject = UnityEngine.Object;
 
-namespace RAFT_HAX;
+namespace Hax;
 
 public class ObjectCache<T> : ObjectCacheBase where T : UnityObject {
     public T Object { get; set; }

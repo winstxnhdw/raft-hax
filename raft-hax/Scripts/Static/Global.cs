@@ -2,7 +2,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
-namespace RAFT_HAX;
+namespace Hax;
 public static class Global {
     static Camera camera = Camera.main;
 

@@ -1,6 +1,6 @@
 ﻿using UnityEngine;
 
-namespace RAFT_HAX;
+namespace Hax;
 public class Loader : MonoBehaviour {
     static GameObject HaxGameObject { get; } = new GameObject();
     public static GameObject HaxModules { get; } = new GameObject();

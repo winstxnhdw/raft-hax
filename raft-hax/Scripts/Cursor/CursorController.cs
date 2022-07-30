@@ -1,7 +1,7 @@
 
 using UnityEngine;
 
-namespace RAFT_HAX;
+namespace Hax;
 public class CursorController : HaxComponents {
     bool CursorLocked { get; set; } = false;
 

@@ -2,7 +2,7 @@ using System.Collections;
 using UnityEngine;
 using Steamworks;
 
-namespace RAFT_HAX;
+namespace Hax;
 public class PaddleMod : HaxModules {
     Coroutine paddleCoroutine;
 

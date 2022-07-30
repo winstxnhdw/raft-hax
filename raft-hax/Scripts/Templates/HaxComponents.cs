@@ -1,6 +1,6 @@
 using UnityEngine;
 
-namespace RAFT_HAX;
+namespace Hax;
 public class HaxComponents : MonoBehaviour {
     protected virtual void Start() {
         Console.Print($"{this.GetType().Name} started.");

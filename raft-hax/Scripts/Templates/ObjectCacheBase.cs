@@ -1,7 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
-namespace RAFT_HAX;
+namespace Hax;
 public class ObjectCacheBase {
     protected float UpdateInterval { get; }
     protected MonoBehaviour Self { get; set; }

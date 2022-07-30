@@ -1,4 +1,4 @@
-namespace RAFT_HAX;
+namespace Hax;
 public class PersonMod : HaxModules {
     protected override void OnEnable() {
         base.OnEnable();

@@ -1,4 +1,4 @@
-namespace RAFT_HAX;
+namespace Hax;
 public class Hax : HaxComponents {
     public static bool HaxPaused { get; private set; } = false;
 

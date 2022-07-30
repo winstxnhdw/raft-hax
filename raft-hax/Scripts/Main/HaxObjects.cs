@@ -1,4 +1,4 @@
-namespace RAFT_HAX;
+namespace Hax;
 public class HaxObjects : HaxComponents {
     static ObjectsCache<Network_Player> playerObjects = new ObjectsCache<Network_Player>(0.3f);
     public static Network_Player LocalPlayerObject {
