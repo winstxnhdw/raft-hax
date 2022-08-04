@@ -9,19 +9,19 @@ public class Reflector {
     const BindingFlags InternalStatic = BindingFlags.NonPublic | BindingFlags.Static;
     const BindingFlags PublicStatic = BindingFlags.Public | BindingFlags.Static;
 
-    static BindingFlags InternalField => Reflector.Internal | BindingFlags.GetField;
-    static BindingFlags InternalProperty => Reflector.Internal | BindingFlags.GetProperty;
-    static BindingFlags InternalMethod => Reflector.Internal | BindingFlags.InvokeMethod;
-    static BindingFlags InternalStaticField => Reflector.InternalStatic | BindingFlags.GetField;
-    static BindingFlags InternalStaticProperty => Reflector.InternalStatic | BindingFlags.GetProperty;
-    static BindingFlags InternalStaticMethod => Reflector.InternalStatic | BindingFlags.InvokeMethod;
+    const BindingFlags InternalField = Reflector.Internal | BindingFlags.GetField;
+    const BindingFlags InternalProperty = Reflector.Internal | BindingFlags.GetProperty;
+    const BindingFlags InternalMethod = Reflector.Internal | BindingFlags.InvokeMethod;
+    const BindingFlags InternalStaticField = Reflector.InternalStatic | BindingFlags.GetField;
+    const BindingFlags InternalStaticProperty = Reflector.InternalStatic | BindingFlags.GetProperty;
+    const BindingFlags InternalStaticMethod = Reflector.InternalStatic | BindingFlags.InvokeMethod;
 
-    static BindingFlags PublicField => Reflector.Public | BindingFlags.GetField;
-    static BindingFlags PublicProperty => Reflector.Public | BindingFlags.GetProperty;
-    static BindingFlags PublicMethod => Reflector.Public | BindingFlags.InvokeMethod;
-    static BindingFlags PublicStaticField => Reflector.PublicStatic | BindingFlags.GetField;
-    static BindingFlags PublicStaticProperty => Reflector.PublicStatic | BindingFlags.GetProperty;
-    static BindingFlags PublicStaticMethod => Reflector.PublicStatic | BindingFlags.InvokeMethod;
+    const BindingFlags PublicField = Reflector.Public | BindingFlags.GetField;
+    const BindingFlags PublicProperty = Reflector.Public | BindingFlags.GetProperty;
+    const BindingFlags PublicMethod = Reflector.Public | BindingFlags.InvokeMethod;
+    const BindingFlags PublicStaticField = Reflector.PublicStatic | BindingFlags.GetField;
+    const BindingFlags PublicStaticProperty = Reflector.PublicStatic | BindingFlags.GetProperty;
+    const BindingFlags PublicStaticMethod = Reflector.PublicStatic | BindingFlags.InvokeMethod;
 
     object Obj { get; }
     Type ObjType { get; }
