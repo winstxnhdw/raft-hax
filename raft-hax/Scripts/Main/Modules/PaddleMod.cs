@@ -9,7 +9,6 @@ public class PaddleMod : HaxModules {
     protected override void OnEnable() {
         base.OnEnable();
         InputListener.onF10Press += this.Paddle;
-
     }
 
     protected override void OnDisable() {
