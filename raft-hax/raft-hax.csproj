@@ -6,7 +6,6 @@
     <LangVersion>latest</LangVersion>
     <TargetFramework>net40</TargetFramework>
     <RootNamespace>raft_hax</RootNamespace>
-    <ImplicitUsings>disable</ImplicitUsings>
 
   </PropertyGroup>
 
