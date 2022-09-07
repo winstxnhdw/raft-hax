@@ -13,7 +13,6 @@ public class InputListener : HaxComponents {
         {() => Input.GetKeyDown(KeyCode.F10),         () => InputListener.onF10Press()},
         {() => Input.GetKeyDown(KeyCode.Pause),       () => InputListener.onPausePress?.Invoke()},
         {() => Input.GetKeyDown(KeyCode.Escape),      () => InputListener.onEscapePress?.Invoke()},
-
     };
 
     void Update() {
