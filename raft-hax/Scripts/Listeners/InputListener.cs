@@ -21,7 +21,7 @@ public class InputListener : HaxComponents {
 
     void KeyboardListener() {
         foreach (KeyValuePair<Func<bool>, Action> keyAction in this.keyActionsDict) {
-            if (!(keyAction.Key())) continue;
+            if (!keyAction.Key()) continue;
             keyAction.Value();
         }
     }
