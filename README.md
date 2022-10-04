@@ -1,5 +1,8 @@
 # raft-hax
 
+
+![main.yml](https://github.com/winstxnhdw/raft-hax/actions/workflows/main.yml/badge.svg)
+
 Internal cheats for [Raft](https://en.wikipedia.org/wiki/Raft_(video_game)).
 
 ## Requirements
