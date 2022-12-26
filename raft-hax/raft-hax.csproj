@@ -4,10 +4,16 @@
 
     <OutDir>../bin</OutDir>
     <LangVersion>latest</LangVersion>
-    <TargetFramework>net40</TargetFramework>
+    <TargetFramework>net48</TargetFramework>
     <RootNamespace>raft_hax</RootNamespace>
 
   </PropertyGroup>
+
+  <Target Name="CleanBeforeRestore" BeforeTargets="Restore">
+    <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
+    <RemoveDir Directories="$(BaseOutputPath)" />
+    <RemoveDir Directories="$(PublishDir)" />
+  </Target>
 
   <ItemGroup>
 
