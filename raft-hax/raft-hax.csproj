@@ -4,47 +4,48 @@
 
     <OutDir>../bin</OutDir>
     <LangVersion>latest</LangVersion>
-    <TargetFramework>net48</TargetFramework>
+    <TargetFramework>net471</TargetFramework>
     <RootNamespace>raft_hax</RootNamespace>
+    <ReferencePath>./References</ReferencePath>
 
   </PropertyGroup>
 
+  <ItemGroup>
+
+    <Reference Include="Assembly-CSharp">
+      <HintPath>$(ReferencePath)/Assembly-CSharp.dll</HintPath>
+    </Reference>
+
+    <Reference Include="Assembly-CSharp-firstpass">
+      <HintPath>$(ReferencePath)/Assembly-CSharp-firstpass.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine">
+      <HintPath>$(ReferencePath)/UnityEngine.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.CoreModule">
+      <HintPath>$(ReferencePath)/UnityEngine.CoreModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.IMGUIModule">
+      <HintPath>$(ReferencePath)/UnityEngine.IMGUIModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.InputLegacyModule">
+      <HintPath>$(ReferencePath)/UnityEngine.InputLegacyModule.dll</HintPath>
+    </Reference>
+
+    <Reference Include="UnityEngine.PhysicsModule">
+      <HintPath>$(ReferencePath)/UnityEngine.PhysicsModule.dll</HintPath>
+    </Reference>
+
+  </ItemGroup>
+  
   <Target Name="CleanBeforeRestore" BeforeTargets="Restore">
     <RemoveDir Directories="$(BaseIntermediateOutputPath)" />
     <RemoveDir Directories="$(BaseOutputPath)" />
     <RemoveDir Directories="$(PublishDir)" />
   </Target>
-
-  <ItemGroup>
-
-    <Reference Include="Assembly-CSharp">
-      <HintPath>./References/Assembly-CSharp.dll</HintPath>
-    </Reference>
-
-    <Reference Include="Assembly-CSharp-firstpass">
-      <HintPath>./References/Assembly-CSharp-firstpass.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine">
-      <HintPath>./References/UnityEngine.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine.CoreModule">
-      <HintPath>./References/UnityEngine.CoreModule.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine.IMGUIModule">
-      <HintPath>./References/UnityEngine.IMGUIModule.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine.InputLegacyModule">
-      <HintPath>./References/UnityEngine.InputLegacyModule.dll</HintPath>
-    </Reference>
-
-    <Reference Include="UnityEngine.PhysicsModule">
-      <HintPath>./References/UnityEngine.PhysicsModule.dll</HintPath>
-    </Reference>
-
-  </ItemGroup>
-
+  
 </Project>
