@@ -715,3 +715,15 @@ ThrowableAnchor
 | ------- | -------- |
 | Paddle  | F10      |
 | Console | `        |
+
+## Custom Features
+
+Other than unlocking the full developer commands, some custom features are implemented with `raft-hax`.
+
+### Paddle
+
+Emulates the paddle network request and drives the raft magnitudes faster in the direction of the player's heading. Durability of the paddle is still consumed.
+
+#### Requirements
+
+Initial usage requires a [Paddle](https://raft.fandom.com/wiki/Paddle) to be selected on the hotbar.
