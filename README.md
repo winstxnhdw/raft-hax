@@ -1,6 +1,5 @@
 # raft-hax
 
-
 ![main.yml](https://github.com/winstxnhdw/raft-hax/actions/workflows/main.yml/badge.svg)
 
 Internal cheats for [Raft](https://en.wikipedia.org/wiki/Raft_(video_game)).
@@ -18,7 +17,7 @@ If you are on Windows 11, follow the instructions [here](https://github.com/wins
 git clone --recursive https://github.com/winstxnhdw/raft-hax.git
 ```
 
-You can now build and install the dependencies by executing `requirements.bat`. It is not required to build dnSpy if you do not plan on doing any [development](#Development).
+You can now build and install the dependencies by executing `requirements.bat`. It is not required to build dnSpy if you do not plan on doing any [development](#development).
 
 ## Usage
 
@@ -36,66 +35,66 @@ dnSpy/dnSpy.exe &
 
 All known/useful developer keyboard binds.
 
-| Action  | Shortcut |
-| ------- | -------- |
-| NoClip (Save/Load) | Shift + N    |
-| NoClip (Restore)   | N            |
-| God Mode           | F2           |
-| Restore Stats      | F3           |
-| Starter Kit        | Shift + F4   |
-| Paintbrush Kit     | Control + F4 |
+| Action             | Shortcut       |
+| ------------------ | -------------- |
+| NoClip (Save/Load) | `Shift + N`    |
+| NoClip (Restore)   | `N`            |
+| God Mode           | `F2`           |
+| Restore Stats      | `F3`           |
+| Starter Kit        | `Shift + F4`   |
+| Paintbrush Kit     | `Control + F4` |
 
 ## Developer Commands
 
 All known developer commands.
 
-| Action  | Command |
-| ------- | ------- |
-| Reset Achievements | /reset achievements |
-| Reset Interactables | /reset interactables |
-| Reset Characters | /reset characters |
-| Reset Buffs | /reset buff |
-| Reset Timescale | /reset timescale |
-| Teleport to Player | /tp [player-name] |
-| Teleport to Treasure | /tp treasure |
-| Teleport to Raft | /tp raft |
-| Unlock All Characters | /unlock all |
-| Unlock All Notes | /notebook all |
-| Nuke Entities | /nuke |
-| Treasure Kit | /kit treasure |
-| Painting Redbeet Kit | /kit painting_redbeet |
-| Painting Tangaroa Kit | /kit painting_tangaroa |
-| Paintbrush Kit | /kit paintbrush |
-| Resources Kit | /kit resources |
-| Seedflower Kit | /kit seedflower |
-| Seed Kit | /kit seed |
-| Armor Kit | /kit armor |
-| Tiki Kit | /kit tiki |
-| Radio Kit | /kit radio |
-| Armor Kit | /kit armor |
-| Cassette Kit | /kit cassette |
-| Hat Kit | /kit hat |
-| Head Kit | /kit head |
-| Utopia Kit | /kit utopia |
-| Temperance Kit | /kit temperance |
-| Bowl Recipe Kit | /kit recipebowl |
-| Paper Recipe Kit | /kit recipepaper |
-| Raw Food Kit | /kit foodraw |
-| Cooked Food Kit | /kit foodcooked |
-| Buff Kit | /kit buff |
-| Play Test Kit | /kit playtest |
-| Fishing Kit | /kit fishing |
-| Trophy Fish Kit | /kit trophyfish |
-| Blueprint Kit | /kit blueprint |
-| Equip Hazmat | /hazmat [true/false] |
+| Action                | Command                  |
+| --------------------- | ------------------------ |
+| Reset Achievements    | `/reset achievements`    |
+| Reset Interactables   | `/reset interactables`   |
+| Reset Characters      | `/reset characters`      |
+| Reset Buffs           | `/reset buff`            |
+| Reset Timescale       | `/reset timescale`       |
+| Teleport to Player    | `/tp [player-name]`      |
+| Teleport to Treasure  | `/tp treasure`           |
+| Teleport to Raft      | `/tp raft`               |
+| Unlock All Characters | `/unlock all`            |
+| Unlock All Notes      | `/notebook all`          |
+| Nuke Entities         | `/nuke`                  |
+| Treasure Kit          | `/kit treasure`          |
+| Painting Redbeet Kit  | `/kit painting_redbeet`  |
+| Painting Tangaroa Kit | `/kit painting_tangaroa` |
+| Paintbrush Kit        | `/kit paintbrush`        |
+| Resources Kit         | `/kit resources`         |
+| Seedflower Kit        | `/kit seedflower`        |
+| Seed Kit              | `/kit seed`              |
+| Armor Kit             | `/kit armor`             |
+| Tiki Kit              | `/kit tiki`              |
+| Radio Kit             | `/kit radio`             |
+| Armor Kit             | `/kit armor`             |
+| Cassette Kit          | `/kit cassette`          |
+| Hat Kit               | `/kit hat`               |
+| Head Kit              | `/kit head`              |
+| Utopia Kit            | `/kit utopia`            |
+| Temperance Kit        | `/kit temperance`        |
+| Bowl Recipe Kit       | `/kit recipebowl`        |
+| Paper Recipe Kit      | `/kit recipepaper`       |
+| Raw Food Kit          | `/kit foodraw`           |
+| Cooked Food Kit       | `/kit foodcooked`        |
+| Buff Kit              | `/kit buff`              |
+| Play Test Kit         | `/kit playtest`          |
+| Fishing Kit           | `/kit fishing`           |
+| Trophy Fish Kit       | `/kit trophyfish`        |
+| Blueprint Kit         | `/kit blueprint`         |
+| Equip Hazmat          | `/hazmat [true/false]`   |
 
 ### Give Command
 
 The `/give` command is used to give yourself any item in the game.
 
-| Action  | Command |
-| ------- | ------- |
-| Give    | /give [UniqueName/UniqueIndex] [quantity]|
+| Action  | Command                                     |
+| ------- | ------------------------------------------- |
+| Give    | `/give [UniqueName/UniqueIndex] [quantity]` |
 
 The `UniqueName` of every item can be mined by executing the following code. Since there are about 13 KB of items, we dump them into a `.txt` file within the Windows `Documents` folder.
 
