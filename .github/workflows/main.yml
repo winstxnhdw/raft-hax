@@ -4,9 +4,9 @@ name: dotnet
 on:
   push:
     paths:
-      - 'raft-hax/**'
-      - 'submodules/SharpMonoInjectorCore'
-      - '.github/workflows/main.yml'
+      - raft-hax/**
+      - submodules/SharpMonoInjectorCore
+      - .github/workflows/main.yml
 
 jobs:
   build:
