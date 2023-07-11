@@ -1,5 +1,4 @@
-
-name: dotnet
+name: Build
 
 on:
   push:
